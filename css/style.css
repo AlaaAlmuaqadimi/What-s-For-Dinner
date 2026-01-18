@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0 I !important;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+:root{
+    --color-red-50: oklch(97.1% .013 17.38);
+    --color-red-100: oklch(93.6% .032 17.717);
+    --color-red-500: oklch(63.7% .237 25.331);
+    --color-red-600: oklch(57.7% .245 27.325);
+    --color-red-800: oklch(44.4% .177 26.899);
+    --color-orange-50: oklch(98% .016 73.684);
+    --color-orange-100: oklch(95.4% .038 75.164);
+    --color-orange-200: oklch(90.1% .076 70.697);
+    --color-orange-300: oklch(83.7% .128 66.29);
+    --color-orange-500: oklch(70.5% .213 47.604);
+    --color-orange-600: oklch(64.6% .222 41.116);
+    --color-amber-50: oklch(98.7% .022 95.277);
+    --color-amber-400: oklch(82.8% .189 84.429);
+    --color-amber-600: oklch(66.6% .179 58.318);
+    --color-yellow-50: oklch(98.7% .026 102.212);
+    --color-yellow-100: oklch(97.3% .071 103.193);
+    --color-yellow-400: oklch(85.2% .199 91.936);
+    --color-yellow-600: oklch(68.1% .162 75.834);
+    --color-green-100: oklch(96.2% .044 156.743);
+    --color-green-600: oklch(62.7% .194 149.214);
+    --color-green-700: oklch(52.7% .154 150.069);
+    --color-blue-100: oklch(93.2% .032 255.585);
+    --color-blue-500: oklch(62.3% .214 259.815);
+    --color-blue-600: oklch(54.6% .245 262.881);
+    --color-blue-700: oklch(48.8% .243 264.376);
+    --color-pink-100: oklch(94.8% .028 342.258);
+    --color-pink-600: oklch(59.2% .249 .584);
+    --color-gray-50: oklch(98.5% .002 247.839);
+    --color-gray-200: oklch(92.8% .006 264.531);
+    --color-gray-500: oklch(55.1% .027 264.364);
+    --color-gray-600: oklch(44.6% .03 256.802);
+    --color-gray-700: oklch(37.3% .034 259.733);
+    --color-gray-900: oklch(21% .034 264.665);
+    --color-white: #fff;
+    --spacing: .25rem;
+    --container-7xl: 80rem;
+    --text-xs: .75rem;
+    --text-xs--line-height: calc(1 / .75);
+    --text-sm: .875rem;
+    --text-sm--line-height: calc(1.25 / .875);
+    --text-base: 1rem;
+    --text-base--line-height: 1.5;
+    --text-lg: 1.125rem;
+    --text-lg--line-height: calc(1.75 / 1.125);
+    --text-xl: 1.25rem;
+    --text-xl--line-height: calc(1.75 / 1.25);
+    --text-2xl: 1.5rem;
+    --text-2xl--line-height: calc(2 / 1.5);
+    --text-4xl: 2.25rem;
+    --text-4xl--line-height: calc(2.5 / 2.25);
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+    --radius-lg: .5rem;
+    --radius-xl: .75rem;
+    --radius-2xl: 1rem;
+    --radius-3xl: 1.5rem;
+    --blur-sm: 8px;
+    --default-transition-duration: .15s;
+    --default-transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+    --default-font-family: var(--font-sans);
+    --default-mono-font-family: var(--font-mono);
+    --color-scrollbar-thumb: oklch(75% .15 35 / .3);
+    --color-scrollbar-thumb-hover: oklch(75% .15 35 / .5);
+    --tw-shadow: 0 1px 3px 0 var(--tw-shadow-color, #0000001a), 0 1px 2px -1px var(--tw-shadow-color, #0000001a);
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    
+    background-image: linear-gradient(to bottom right , var(--color-orange-50) , var(--color-amber-50) , var(--color-yellow-50));
+}
+/* نافبار عام */
+nav {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  border-top: 1px solid #ffe4c2;
+}
+
+/* حواف الكونتينر للنافبار */
+nav .container-xl {
+  padding: 1rem;
+}
+
+/* أيقونة اللوجو الدائرية */
+nav .navbar-brand .icon {
+  width: 3rem;
+  height: 3rem;
+  background-image: linear-gradient(to bottom right, #f97316, #ef4444); /* برتقالي → أحمر */
+  box-shadow: 0 10px 15px -3px rgba(0,0,0,0.15),
+              0 4px 6px -4px rgba(0,0,0,0.12);
+}
+
+nav .navbar-brand .icon i {
+  font-size: 1.25rem;
+}
+
+nav .navbar-brand h1 {
+  font-size: 1.1rem;
+  color: #111827; /* رمادي غامق */
+}
+
+nav .navbar-brand p {
+  font-size: 0.75rem;
+  color: #6b7280; /* رمادي متوسط */
+}
+
+/* أيقونات اليمين */
+.navbar-collapse .icon {
+  color: #4b5563;
+  transition: all .2s;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.navbar-collapse .icon:hover {
+  color: #ea580c; /* برتقالي أغمق */
+}
+
+.navbar-collapse img {
+  width: 2rem;
+  height: 2rem;
+  border: 2px solid #fdba74; /* برتقالي فاتح */
+}
+
+/* زر المنيو في الموبايل */
+.navbar-toggler {
+  color: #4b5563;
+  transition: all .2s;
+  font-size: 1.5rem;
+}
+
+.navbar-toggler:hover {
+  color: #ea580c;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
